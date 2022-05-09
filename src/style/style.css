@@ -37,10 +37,6 @@
     font-family: lato, Arial, Helvetica, sans-serif;
 }
 
-body {
-    overflow-x: hidden;
-}
-
 ul {
     list-style: none;
 }
@@ -462,12 +458,13 @@ h6 {
 
 .main {
     position: relative;
+    overflow-x: hidden;
 }
 
-.main::before {
+.header::before {
     content: '';
     position: absolute;
-    top: -369px;
+    top: -200px;
     left: -677px;
     z-index: -1;
     width: 782px;
