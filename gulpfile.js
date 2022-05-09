@@ -17,7 +17,7 @@ const path = {
 		html: 'src/*.html',
 		svg: 'src/images/svg/**/*.svg',
 		img: [
-			'src/images/**/*.{jpg,jpeg,png}',
+			'src/images/**/*.{jpg,jpeg,png,webp}',
 			'src/images/*.svg',
 		],
 		js: [

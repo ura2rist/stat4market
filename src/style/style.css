@@ -357,16 +357,24 @@ h6 {
     box-sizing: border-box;
 }
 
-.history__line-first .history__img {
+.history__img-wrap {
+    display: flex;
+}
+
+.history__img {
+    object-fit: contain;
+}
+
+.history__line-first .history__img-wrap {
     margin-right: 15px;
 }
 
-.history__line-second .history__img {
+.history__line-second .history__img-wrap {
     margin-left: 15px;
 }
 
 .history__wrapper {
-    margin-bottom: 143px;
+    margin-bottom: 133px;
 }
 
 .sales__title {
@@ -558,11 +566,11 @@ h6 {
         font-size: 16px;
     }
 
-    .main::before {
+    .header::before {
         width: 446px;
         height: 446px;
         background-size: cover;
-        top: -269px;
+        top: -100px;
         left: -424px;
     }
 
@@ -624,17 +632,17 @@ h6 {
         margin-bottom: 29px;
     }
 
-    .history__img {
-        max-width: 474px;
+    .history__img-wrap {
+        max-width: 367px;
         width: 100%;
     }
 
-    .history__line-first .history__img {
+    .history__line-first .history__img-wrap {
         margin-right: 80px;
         max-height: 364px;
     }
     
-    .history__line-second .history__img {
+    .history__line-second .history__img-wrap {
         margin-left: 80px;
         max-height: 359px;
     }
@@ -647,7 +655,15 @@ h6 {
         padding-right: 68px;
     }
 
+    .history__line-first .history__img {
+        object-position: left;
+    }
+
     .history__line-second .history__img {
+        object-position: left;
+    }
+
+    .history__line-second .history__img-wrap {
         margin-left: 58px;
         max-height: 364px;
     }
@@ -687,7 +703,7 @@ h6 {
         padding-right: 15px;
     }
 
-    .main::before {
+    .header::before {
         display: none;
     }
 
@@ -803,12 +819,17 @@ h6 {
         padding-right: 0;
     }
 
-    .history__img {
+    .history__line-first .history__img,
+    .history__line-second .history__img {
+        max-width: 270px;
+    }
+
+    .history__img-wrap {
         max-width: 268px;
     }
 
-    .history__line-first .history__img {
-        margin-right: 41px;
+    .history__line-first .history__img-wrap {
+        margin-right: 40px;
     }
 
     .history__line-first .history__content {
@@ -820,7 +841,7 @@ h6 {
         padding-left: 0;
     }
 
-    .history__line-second .history__img {
+    .history__line-second .history__img-wrap {
         margin-left: 40px;
     }    
 
@@ -959,7 +980,7 @@ h6 {
         flex-wrap: wrap;
     }
 
-    .history__line-first .history__img {
+    .history__line-first .history__img-wrap {
         margin-right: auto;
         margin-bottom: 25px;
         margin-left: auto;
@@ -976,7 +997,7 @@ h6 {
         order: 1;
     }
 
-    .history__line-second .history__img {
+    .history__line-second .history__img-wrap {
         margin-left: auto;
         margin-right: auto;
         max-width: 249px;
