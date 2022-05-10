@@ -982,6 +982,7 @@ h6 {
     }
 
     .info__right-block {
+        width: fit-content;
         right: 0;
         transform: translateX(126px);
         top: -16px;
