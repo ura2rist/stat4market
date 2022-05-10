@@ -894,6 +894,23 @@ h6 {
     .sales__description {
         margin: 0 auto 81px;
     }
+
+    .header__list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header__item {
+        margin-bottom: 20px;
+    }
+
+    .header__item:last-child {
+        margin-bottom: 0;
+    }
+
+    .header__inner-list {
+        position: relative;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -1077,22 +1094,5 @@ h6 {
         line-height: 24px;
         font-size: 14px;
         text-align: center;
-    }
-
-    .header__list {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .header__item {
-        margin-bottom: 20px;
-    }
-
-    .header__item:last-child {
-        margin-bottom: 0;
-    }
-
-    .header__inner-list {
-        position: relative;
     }
 }
